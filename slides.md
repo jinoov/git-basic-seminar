@@ -201,6 +201,7 @@ image: 'https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI'
 - commit: 상자에 송장을 붙인다(당연히 상자에 든게 없으면 송장도 못붙임!)
 - push: 송장붙인 상자를 서버에 보낸다
 - pull: 서버에서 변경사항을 내려받는다(뒤에서 다른 의미로도 쓰인다)
+- clone: 맨 처음 시작할 때 
 
 ---
 
