@@ -21,3 +21,6 @@ yarn-error.log
 
 # editor
 .idea
+
+# artifacts
+slides-export.pdf
