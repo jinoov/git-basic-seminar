@@ -111,13 +111,6 @@ image: 'https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI'
 
 ---
 
-# 발상의 전환
-- Local and Remote
-- 작업공간 분리하기
-- 기록조작하기
-
----
-
 # 2. Git 관련 도구들
 
 <div style="display: flex; align-items: center; gap: 20px">
@@ -197,26 +190,62 @@ image: 'https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI'
 ---
 
 # 명령어 요약
-- add: 변경 사항들을 상자 안에 넣는다 
-- commit: 상자에 송장을 붙인다(당연히 상자에 든게 없으면 송장도 못붙임!)
-- push: 송장붙인 상자를 서버에 보낸다
-- pull: 서버에서 변경사항을 내려받는다(뒤에서 다른 의미로도 쓰인다)
-- clone: 맨 처음 시작할 때 
+- `git add <원하는 파일>`: 변경 사항들을 상자 안에 넣는다 
+- `git commit -m '<메시지>'`: 상자에 송장을 붙인다(당연히 상자에 든게 없으면 송장도 못붙임!)
+- `git push`: 송장붙인 상자를 서버에 보낸다
+- `git pull`: 서버에서 변경사항을 내려받는다(뒤에서 다른 의미로도 쓰인다)
+- `git clone <원하는 remote 주소>`: 맨 처음 시작할 때
+
+CLI Tips
+- `<명령어> --help`: 웬만한 옵션들 다 나옴
+- `<명령어> --인자이름=인자`: 함수에 인자 넘기듯이 스크립트에 인자 넘기기 
 
 ---
 
 #  4. 개념2) 작업공간 분리와 협업하기
 - 만약 두 사람이 하나의 remote를 바라보고 있다면?
+<div style="display: flex; align-items: center; margin-top: 20px">
+    <img src="/images/img_15.png" width="300"/>
+</div>
 
 ---
 
 # 작업공간 분리하기
 - 작업공간을 분리함으로써 독립성을 확보하기
+<div style="display: flex; align-items: center; margin-top: 20px">
+    <img src="/images/img_16.png" width="400"/>
+</div>
 
 ---
 
-# Tree는 재귀적이다 - 다양한 플로우 이해하기
+# 명령어 요약
+- `git branch`: 브랜치 리스트 보기
+- `git branch -c <브랜치명>`: 브랜치만들기 
+- `git branch -d <브랜치명>`: 브랜치없애기 
+- `git switch(checkout) <브랜치명>`: 브랜치 변경하기
 
 ---
 
-# 
+# Tree는 재귀적이다 
+- 사람이 많다면 더 잘게 쪼갤 수도 있다(Git Flow)
+- 그렇지만 잘게 쪼개는게 꼭 정답은 아닐수도?(Trunk Based Development)
+
+<div style="display: flex; align-items: center; gap: 30px; margin-top: 40px">
+    <div style="border-radius: 20px; overflow: hidden">
+        <img src="/images/img_13.png" width="400"/>
+    </div>
+    <div style="border-radius: 20px; overflow: hidden">
+        <img src="/images/img_14.png" width="400"/>
+    </div>
+</div>
+
+---
+
+# 딴소리) git의 원리
+- 저장소의 수많은 정보들(remote, local, branch, history...)는 대체 어디에 저장되어있는걸까?
+- 저장소 내 `.git`에 비밀이 있다
+
+---
+
+# Hash value
+
