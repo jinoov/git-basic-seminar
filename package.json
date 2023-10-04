@@ -7,9 +7,15 @@
     "export": "slidev export"
   },
   "dependencies": {
-    "@slidev/cli": "^0.43.5",
-    "@slidev/theme-default": "latest",
-    "@slidev/theme-seriph": "latest",
-    "slidev-theme-geist": "^0.8.1"
+    "@slidev/cli": "0.43.5",
+    "@slidev/theme-default": "0.21.2",
+    "@slidev/theme-seriph": "0.21.3",
+    "slidev-theme-geist": "0.8.1"
+  },
+  "version": "0.0.0",
+  "packageManager": "yarn@3.6.4",
+  "devDependencies": {
+    "@iconify-json/carbon": "npm:^1.1.21",
+    "@iconify-json/ph": "npm:^1.1.6"
   }
 }

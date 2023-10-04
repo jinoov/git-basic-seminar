@@ -5,3 +5,16 @@ dist
 index.html
 .remote-assets
 components.d.ts
+
+# when not using zero-install
+.pnp.*
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# logs
+yarn-error.log
