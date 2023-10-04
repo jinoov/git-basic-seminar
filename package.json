@@ -1,25 +1,21 @@
 {
   "name": "git-basic-seminar",
   "private": true,
-  "homepage": "https://PoolC.github.io/git-basic-seminar",
+  "author": "jinho020@yonsei.ac.kr",
   "scripts": {
     "build": "slidev build",
     "dev": "slidev --open",
-    "export": "slidev export",
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -d dist"
+    "export": "slidev export"
   },
   "dependencies": {
     "@slidev/cli": "0.43.5",
     "@slidev/theme-default": "0.21.2",
-    "@slidev/theme-seriph": "0.21.3",
-    "slidev-theme-geist": "0.8.1"
+    "@slidev/theme-seriph": "0.21.3"
   },
   "version": "0.0.0",
   "devDependencies": {
     "@iconify-json/carbon": "1.1.21",
     "@iconify-json/ph": "1.1.6",
-    "gh-pages": "6.0.0",
     "playwright-chromium": "1.38.1"
   },
   "packageManager": "yarn@3.6.4"

@@ -1,5 +1,8 @@
 ---
 theme: seriph
+themeConfig:
+  primary: '#3182f6'
+  fontWeight: 500
 class: text-center
 highlighter: shiki
 lineNumbers: false
@@ -11,10 +14,10 @@ mdc: true
 fonts:
   sans: 'Noto Sans KR'
   local: 'Noto Sans KR'
+image: 'https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI'
 ---
 
-# Git/Github Basic Seminar 
-깃/깃허브 입문 세미나
+# Git/GitHub 101 
 
 --- 
 
@@ -30,7 +33,7 @@ fonts:
 
 1. Git이란? 대체 왜 쓰는가?
 2. Git 관련 도구들 소개(CLI & GUI)
-3. 개념1) local and remote
+3. 개념1) Local and Remote
 4. 개념2) 작업공간 분리와 협업하기
 5. 개념3) 기록조작하기
 6. System Integration
@@ -166,8 +169,53 @@ fonts:
 
 ---
 
-#  3. 개념1) local and remote
+#  3. 개념1) Local and Remote
+<div style="display: flex; align-items: center; gap: 20px; margin-top: 40px">
+    <div style="border-radius: 20px; overflow: hidden">
+        <img src="/images/img_12.png" width="300"/>
+    </div>
+</div>
+
+---
+
+# Layers in Local 
+<div>
+    <ul>
+        <li>History: 변동 기록</li>
+        <li>Staged: 상자 안의 영역</li>
+        <li>Unstaged: 상자 밖의 영역</li>
+        <li>Working directory: 관심 밖의 영역</li>
+    </ul>
+    <p style="margin-top: 20px; text-decoration: line-through">굳이 이렇게까지 복잡하게 해야하는가?</p>
+</div>
+
+---
+
+# Remote의 변경사항 내려받기
+- Q. 내려받은 내용이 작업내용을 덮어씌운다면..?
+
+---
+
+# 명령어 요약
+- add: 변경 사항들을 상자 안에 넣는다 
+- commit: 상자에 송장을 붙인다(당연히 상자에 든게 없으면 송장도 못붙임!)
+- push: 송장붙인 상자를 서버에 보낸다
+- pull: 서버에서 변경사항을 내려받는다(뒤에서 다른 의미로도 쓰인다)
 
 ---
 
 #  4. 개념2) 작업공간 분리와 협업하기
+- 만약 두 사람이 하나의 remote를 바라보고 있다면?
+
+---
+
+# 작업공간 분리하기
+- 작업공간을 분리함으로써 독립성을 확보하기
+
+---
+
+# Tree는 재귀적이다 - 다양한 플로우 이해하기
+
+---
+
+# 

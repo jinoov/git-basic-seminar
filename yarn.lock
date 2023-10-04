@@ -960,6 +960,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@slidev/theme-apple-basic@npm:^0.20.0":
+  version: 0.20.0
+  resolution: "@slidev/theme-apple-basic@npm:0.20.0"
+  dependencies:
+    "@slidev/types": ^0.22.7
+    codemirror-theme-vars: ^0.1.1
+    prism-theme-vars: ^0.2.2
+    theme-vitesse: ^0.1.12
+  checksum: 82b5be664be26e71901bb21c88b71873f8e36399956f8d2538353d9b1d2b5e297be98be4c04909d1c7254c2760b05e4979fe24667aaadf6213b5464ace608c32
+  languageName: node
+  linkType: hard
+
 "@slidev/theme-default@npm:0.21.2":
   version: 0.21.2
   resolution: "@slidev/theme-default@npm:0.21.2"
@@ -995,13 +1007,6 @@ __metadata:
   version: 0.22.7
   resolution: "@slidev/types@npm:0.22.7"
   checksum: f30e7b3ee04ed19a643a9f8465c9e664174155dcc3a5cd5d5a1602e290e337e5bb19e9cae6d3570437040917689957557d0752652092696adbf1b1816c6f6eea
-  languageName: node
-  linkType: hard
-
-"@slidev/types@npm:^0.28.9":
-  version: 0.28.10
-  resolution: "@slidev/types@npm:0.28.10"
-  checksum: 81f417c03112c757dd76dda8cd4eae6ad039975f59486246c7dcd2794226e5729462f499939f125a8d4b069344102e3af05f7bfbdc4e69906d999395d9290fe6
   languageName: node
   linkType: hard
 
@@ -3576,11 +3581,11 @@ __metadata:
     "@iconify-json/carbon": 1.1.21
     "@iconify-json/ph": 1.1.6
     "@slidev/cli": 0.43.5
+    "@slidev/theme-apple-basic": ^0.20.0
     "@slidev/theme-default": 0.21.2
     "@slidev/theme-seriph": 0.21.3
     gh-pages: 6.0.0
     playwright-chromium: 1.38.1
-    slidev-theme-geist: 0.8.1
   languageName: unknown
   linkType: soft
 
@@ -6009,17 +6014,6 @@ __metadata:
   version: 4.0.0
   resolution: "slash@npm:4.0.0"
   checksum: da8e4af73712253acd21b7853b7e0dbba776b786e82b010a5bfc8b5051a1db38ed8aba8e1e8f400dd2c9f373be91eb1c42b66e91abb407ff42b10feece5e1d2d
-  languageName: node
-  linkType: hard
-
-"slidev-theme-geist@npm:0.8.1":
-  version: 0.8.1
-  resolution: "slidev-theme-geist@npm:0.8.1"
-  dependencies:
-    "@slidev/types": ^0.28.9
-    codemirror-theme-vars: ^0.1.1
-    prism-theme-vars: ^0.2.2
-  checksum: 84f689879f33a667e21005a71dab97c54c8b0c18511c0eda2c6175e18f2791fc2cc6fe654dcc7eaee658e83fcab6620f707d9b625739273d70ed38d6e72f36f2
   languageName: node
   linkType: hard
 
