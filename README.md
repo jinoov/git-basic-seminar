@@ -7,4 +7,4 @@ yarn dev
 ```
 
 ## Credits
-- [Slidev](https://sli.dev/).
+- [Slidev](https://sli.dev/)
