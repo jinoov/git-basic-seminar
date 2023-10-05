@@ -310,4 +310,4 @@ print('hello world')
 # hash: 8b8d0064cdef7af5e2aadb3cdcd7b7606bb3fd68
 ```
 
-<p style="font-size: 14px; color: #6e6e6e; margin-top: 40px">to be continued...</p>
+<p style="font-size: 14px; color: #6e6e6e; text-align: right; font-weight: 300; position: fixed; bottom: 20px; right: 50px;">To Be Continued</p>
