@@ -45,7 +45,7 @@ image: 'https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI'
 <ul>
     <li>리눅스 토발즈라는 매우 똑똑한 프로그래머가 만든 <b>분산형 버전 관리 시스템</b></li>
     <li>분산 == 협업</li>
-    <li>버전 -> 기록</li>
+    <li>버전 == 기록</li>
     <li style="color: red; font-weight: 700">협업을 용이하게 하는 프로그램 기록 관리 시스템</li>
 </ul>
 
@@ -183,11 +183,12 @@ image: 'https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI'
     </ul>
     <p style="margin-top: 20px; text-decoration: line-through">굳이 이렇게까지 복잡하게 해야하는가?</p>
 </div>
+
 ---
 
 # Layers in Local
 <div>
-    <img src="/images/local-layers.png" alt="">
+    <img src="/images/local-layers.png" alt="" width="500">
 </div>
 
 ---
@@ -207,6 +208,7 @@ image: 'https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI'
     <img src="/images/woowahan-comment.png" width="600" alt=""/>
     <p style="font-size: 12px; color: #6e6e6e">Reference: 우아한기술블로그 - 우린 Git-flow를 사용하고 있어요</p>
 </div>
+
 ---
 
 # 명령어 요약
@@ -270,5 +272,42 @@ CLI Tips
 
 ---
 
-# Hash value
+# .git
+<div style="display: flex; gap: 20px;">
+    <img src="/images/git-internal.png" alt=""/>
+    <ul>
+        <li><code>HEAD</code>: 내가 지금 history상의 어느 지점에 있는지를 알려주는 cursor</li>
+        <li><code>config</code>: git 관련 설정</li>
+        <li><code>index</code>: staging 관련 정보</li>
+        <li><code>objects</code>: history를 이루는 hash들의 정보</li>
+        <li><code>refs</code>: branch들의 정보</li>
+    </ul>
+</div>
 
+---
+
+# Hash value
+- hash: 잘게 쪼개서 새로운 무언가를 만드는 것
+- 결과물: hash value, hash code, hash checksum, ...
+<div style="display: flex; align-items: center; margin-top: 30px">
+    <img src="/images/hashbrown.png" width="300" alt=""/>
+</div>
+
+--- 
+
+# Hash value
+<div style="margin-bottom: 20px;">
+    <ul>
+        <li>파일의 내용과 메타데이터 ➡️ sha1 해싱 ➡️ deflate 알고리즘으로 압축</li>
+        <li>커밋한 시점의 snapshot을 해쉬값으로 남겨놓는다</li>
+        <li>이러한 snapshot들을 이용해 기록조작이 가능하다!</li>
+    </ul>
+</div>
+
+```python
+print('hello world')
+
+# hash: 8b8d0064cdef7af5e2aadb3cdcd7b7606bb3fd68
+```
+
+<p style="font-size: 14px; color: #6e6e6e; margin-top: 40px">to be continued...</p>
