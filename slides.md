@@ -21,9 +21,9 @@ image: 'https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI'
 
 --- 
 
-# 세미나장 소개
+# 발표자 소개
 - 산업공학과 19학번 최진호
-- 인지과학 연계전공
+- 인지과학 복수전공
 - 스타트업에서 2년동안 웹개발자로 근무
 - 생산성(~~날먹~~), UX 엔지니어링에 관심이 많음
 
@@ -44,12 +44,13 @@ image: 'https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI'
 
 <ul>
     <li>리눅스 토발즈라는 매우 똑똑한 프로그래머가 만든 <b>분산형 버전 관리 시스템</b></li>
-    <li>분산 -> 협업 && 버전 -> 기록</li>
+    <li>분산 == 협업</li>
+    <li>버전 -> 기록</li>
     <li style="color: red; font-weight: 700">협업을 용이하게 하는 프로그램 기록 관리 시스템</li>
 </ul>
 
 <div style="padding: 10px; margin-top: 20px;">
-    <img src="/images/img_1.png" width="150">
+    <img src="/images/git-logo.png" width="150" alt="">
     <p style="color: #666; font-size: 14px">Global Information Tracker(?)</p>
 </div>
 
@@ -61,7 +62,7 @@ image: 'https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI'
 - 아래 방식의 문제는 무엇일까?
 
 <div style="padding: 10px; margin-top: 20px;">
-    <img src="/images/img_2.png" width="300"/>
+    <img src="/images/team-ppt.png" width="300" alt=""/>
 </div>
 
 --- 
@@ -75,7 +76,7 @@ image: 'https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI'
 </ol>
 
 <div style="padding: 10px; margin-top: 20px;">
-    <img src="/images/img_2.png" width="300"/>
+    <img src="/images/team-ppt.png" width="300" alt=""/>
 </div>
 
 --- 
@@ -89,7 +90,7 @@ image: 'https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI'
 </ul>
 
 <div style="padding: 10px; margin-top: 20px;">
-    <img src="/images/img_3.png" width="500"/>
+    <img src="/images/google-slide.png" width="500" alt=""/>
 </div>
 
 --- 
@@ -106,7 +107,7 @@ image: 'https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI'
 
 
 <div style="padding: 10px; margin-top: 20px;">
-    <img src="/images/img_3.png" width="500"/>
+    <img src="/images/google-slide.png" width="500" alt=""/>
 </div>
 
 ---
@@ -116,11 +117,11 @@ image: 'https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI'
 <div style="display: flex; align-items: center; gap: 20px">
     <div>
         <p>CLI: Command Line Interface</p>
-        <img src="/images/img_4.png" width="300"/>
+        <img src="/images/cli.png" width="300" alt=""/>
     </div>
     <div>
         <p>GUI: Graphic User Interface</p>
-        <img src="/images/img_5.png" width="300"/>
+        <img src="/images/gui.png" width="300" alt=""/>
     </div>
 </div>
 
@@ -133,13 +134,13 @@ image: 'https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI'
  
 <div style="display: flex; align-items: center; gap: 20px; margin-top: 40px">
     <div style="border-radius: 20px; overflow: hidden">
-        <img src="/images/img_6.png" width="100"/>
+        <img src="/images/github-desktop.png" width="100" alt=""/>
     </div>
     <div style="border-radius: 20px; overflow: hidden">
-        <img src="/images/img_7.png" width="100"/>
+        <img src="/images/sourcetree.png" width="100" alt=""/>
     </div>
     <div style="border-radius: 20px; overflow: hidden">
-        <img src="/images/img_8.png" width="100"/>
+        <img src="/images/fork.png" width="100" alt=""/>
     </div>
 </div>
 
@@ -148,25 +149,26 @@ image: 'https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI'
 # Remote 저장소
 - 그래서 내 소스를 어디에 올릴까?
 
-<div style="display: flex; align-items: center; gap: 20px; margin-top: 40px">
+<div style="display: flex; align-items: center; gap: 20px; margin: 30px 0">
     <div style="border-radius: 20px; overflow: hidden">
-        <img src="/images/img_9.png" width="100"/>
+        <img src="/images/github.png" width="100" alt=""/>
     </div>
     <div style="border-radius: 20px; overflow: hidden">
-        <img src="/images/img_10.png" width="100"/>
+        <img src="/images/gitlab.png" width="100" alt=""/>
     </div>
     <div style="border-radius: 20px; overflow: hidden">
-        <img src="/images/img_11.png" width="100"/>
+        <img src="/images/gitbucket.png" width="100" alt=""/>
     </div>
 </div>
+
+- 일반적인 상황은 아니지만 원격 저장소를 여러 개 둘 수도 있다.
+- 가장 근본이 되는 저장소 == origin
 
 ---
 
 #  3. 개념1) Local and Remote
-<div style="display: flex; align-items: center; gap: 20px; margin-top: 40px">
-    <div style="border-radius: 20px; overflow: hidden">
-        <img src="/images/img_12.png" width="300"/>
-    </div>
+<div style="margin-top: 40px">
+    <img src="/images/local-and-remote.png" width="300" alt=""/>
 </div>
 
 ---
@@ -177,24 +179,45 @@ image: 'https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI'
         <li>History: 변동 기록</li>
         <li>Staged: 상자 안의 영역</li>
         <li>Unstaged: 상자 밖의 영역</li>
-        <li>Working directory: 관심 밖의 영역</li>
+        <li>Untracked: 아예 관심을 갖지 않는 영역</li>
     </ul>
     <p style="margin-top: 20px; text-decoration: line-through">굳이 이렇게까지 복잡하게 해야하는가?</p>
+</div>
+---
+
+# Layers in Local
+<div>
+    <img src="/images/local-layers.png" alt="">
 </div>
 
 ---
 
 # Remote의 변경사항 내려받기
-- Q. 내려받은 내용이 작업내용을 덮어씌운다면..?
+- Question.
+- 내려받은 내용이 작업내용을 덮어씌운다면..?
+ 
+---
 
+# Remote의 변경사항 내려받기
+- Answer.
+- Git은 애매한 상황에서는 사용자에게 권한을 위임한다
+- 충돌이 덜 나게하려면? 
+ 
+<div style="margin-top: 40px">
+    <img src="/images/woowahan-comment.png" width="600" alt=""/>
+    <p style="font-size: 12px; color: #6e6e6e">Reference: 우아한기술블로그 - 우린 Git-flow를 사용하고 있어요</p>
+</div>
 ---
 
 # 명령어 요약
+- `git status`: staging area / unstaging area 확인
 - `git add <원하는 파일>`: 변경 사항들을 상자 안에 넣는다 
 - `git commit -m '<메시지>'`: 상자에 송장을 붙인다(당연히 상자에 든게 없으면 송장도 못붙임!)
 - `git push`: 송장붙인 상자를 서버에 보낸다
 - `git pull`: 서버에서 변경사항을 내려받는다(뒤에서 다른 의미로도 쓰인다)
 - `git clone <원하는 remote 주소>`: 맨 처음 시작할 때
+- `git log`: 히스토리 보기 
+- `git diff`: 현재시점의 변경사항 보기 
 
 CLI Tips
 - `<명령어> --help`: 웬만한 옵션들 다 나옴
@@ -205,7 +228,7 @@ CLI Tips
 #  4. 개념2) 작업공간 분리와 협업하기
 - 만약 두 사람이 하나의 remote를 바라보고 있다면?
 <div style="display: flex; align-items: center; margin-top: 20px">
-    <img src="/images/img_15.png" width="300"/>
+    <img src="/images/one-remote-two-locals.png" width="300" alt=""/>
 </div>
 
 ---
@@ -213,7 +236,7 @@ CLI Tips
 # 작업공간 분리하기
 - 작업공간을 분리함으로써 독립성을 확보하기
 <div style="display: flex; align-items: center; margin-top: 20px">
-    <img src="/images/img_16.png" width="400"/>
+    <img src="/images/separate-workspace.png" width="400" alt=""/>
 </div>
 
 ---
@@ -232,10 +255,10 @@ CLI Tips
 
 <div style="display: flex; align-items: center; gap: 30px; margin-top: 40px">
     <div style="border-radius: 20px; overflow: hidden">
-        <img src="/images/img_13.png" width="400"/>
+        <img src="/images/git-flow.png" width="400" alt=""/>
     </div>
     <div style="border-radius: 20px; overflow: hidden">
-        <img src="/images/img_14.png" width="400"/>
+        <img src="/images/trunk-based-development.png" width="400" alt=""/>
     </div>
 </div>
 
