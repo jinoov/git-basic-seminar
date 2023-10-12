@@ -427,10 +427,18 @@ print('hello world')
 - "Issue 생성할 때마다, PR 날릴 때마다.. 일일이 보고해야하나?? 🤔"
 - [참고링크](https://sepiros.tistory.com/37)
 
+<div style="display: flex; align-items: center; margin-top: 30px">
+    <img src="/images/integration-in-slack.png" width="300" alt=""/>
+</div>
+
 ---
 
 # 나만의 웹사이트 만들어서 자동배포하기
-<div style="display: flex; align-items: center; margin-top: 30px">
+- 배포(업로드) 지옥에서 벗어나자
+- [참고링크](https://shape-coding.tistory.com/entry/Vercel-Vercel%EB%A1%9C-%ED%94%84%EB%A1%A0%ED%8A%B8-%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0)
+ 
+<div style="display: flex; align-items: center; margin-top: 15px; gap: 100px">
+    <img src="/images/kakao-talk.jpeg" width="180" alt=""/>
     <img src="/images/server-upload.png" width="300" alt=""/>
 </div>
 
