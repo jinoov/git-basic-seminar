@@ -5,7 +5,8 @@
   "version": "0.0.1",
   "scripts": {
     "build": "slidev build",
-    "dev": "slidev --open"
+    "dev": "slidev --open",
+    "export": "slidev export"
   },
   "dependencies": {
     "@slidev/cli": "0.43.5",
@@ -14,7 +15,8 @@
   },
   "devDependencies": {
     "@iconify-json/carbon": "1.1.21",
-    "@iconify-json/ph": "1.1.6"
+    "@iconify-json/ph": "1.1.6",
+    "playwright-chromium": "1.38.1"
   },
   "packageManager": "yarn@3.6.4"
 }
