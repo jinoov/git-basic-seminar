@@ -1,7 +1,7 @@
 ---
 theme: seriph
 themeConfig:
-  primary: "#3182f6"
+  primary: '#3182f6'
   fontWeight: 500
 class: text-center
 highlighter: shiki
@@ -12,9 +12,9 @@ transition: slide-left
 title: Git Basic Seminar
 mdc: true
 fonts:
-  sans: "Noto Sans KR"
-  local: "Noto Sans KR"
-image: "https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI"
+  sans: 'Noto Serif KR'
+  local: 'Noto Serif KR'
+image: 'https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI'
 ---
 
 # Git/GitHub 101
