@@ -1,7 +1,7 @@
 ---
 theme: seriph
 themeConfig:
-  primary: '#3182f6'
+  primary: '#47be9b'
   fontWeight: 500
 class: text-center
 highlighter: shiki
@@ -10,11 +10,9 @@ drawings:
   persist: false
 transition: slide-left
 title: Git Basic Seminar
-mdc: true
 fonts:
-  sans: 'Noto Serif KR'
-  local: 'Noto Serif KR'
-image: 'https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI'
+  sans: 'Noto Sans KR'
+  local: 'Noto Sans KR'
 ---
 
 # Git/GitHub 101
@@ -23,30 +21,37 @@ image: 'https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI'
 
 # 발표자 소개
 
-- 산업공학과 19학번 최진호
-- 인지과학 복수전공
-- 스타트업에서 2년동안 웹개발자로 근무
-- 생산성(~~날먹~~), UX 엔지니어링에 관심이 많음
+- 산업공학과 재학 중
+- 웹개발을 좋아합니다.
+- 생산성을 높이는 방법들(~~날먹~~)에 관심이 많습니다.
 
 ---
 
 # Table Of Contents
 
 1. Git이란? 대체 왜 쓰는가?
-2. Git 관련 도구들 소개(CLI & GUI)
+2. 실습환경 구축하기
 3. 개념1) Local and Remote
 4. 개념2) 작업공간 분리와 협업하기
-5. 개념3) 기록조작하기
-6. System Integration
+5. 오픈소스에 기여하기
+6. Git의 내부원리
+7. 개념3) 기록조작하기
+8. GitHub 메뉴 소개
+9. 외부도구와의 연동
 
 ---
 
-# 1. Git이란?
+# 1. Git이란? 대체 왜 쓰는가?
+
+---
+
+# Git이란?
 
 <ul>
+    <li style="color: gray; opacity: 0.3">학교에서 알려주지 않지만 학생들이 당연히 알고 있을것이라 가정되는 툴</li>
     <li>리눅스 토발즈라는 매우 똑똑한 프로그래머가 만든 <b>분산형 버전 관리 시스템</b></li>
-    <li>분산 == 협업</li>
-    <li>버전 == 기록</li>
+    <li><code>분산 == 협업</code></li>
+    <li><code>버전 == 기록</code></li>
     <li style="color: red; font-weight: 700">협업을 용이하게 하는 프로그램 기록 관리 시스템</li>
 </ul>
 
@@ -57,7 +62,7 @@ image: 'https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI'
 
 ---
 
-# 1. Git을 대체 왜 쓰는가?(문제의식)
+# Git을 대체 왜 쓰는가?(문제의식)
 
 - 조별과제 PPT를 만들 때를 상상해보자.
 - 아래 방식의 문제는 무엇일까?
@@ -99,10 +104,11 @@ image: 'https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI'
 # 구글 슬라이드의 한계
 
 <div>
-    <h4>그러나...</h4>
+    <h4 style="color: red; font-weight: 700">그러나...</h4>
     <ul>
         <li>누구 한명이 실험적인 시도를 하고 싶다면?</li>
         <li>실시간 변경은 늘 옳을까?</li>
+        <li>???: 아니 이거 누가 수정한거지</li>
     </ul>
 </div>
 
@@ -112,7 +118,28 @@ image: 'https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI'
 
 ---
 
-# 2. Git 관련 도구들
+# 2. 실습환경 구축하기
+
+---
+
+# Git Download
+
+- Git은 하나의 프로그램. 설치가 필요하다.
+
+<div style="display: flex; align-items: center; gap: 20px; margin-top: 40px">
+    <div style="border-radius: 20px; overflow: hidden">
+        <img src="/images/git-download.png" width="500" alt=""/>
+    </div>
+</div>
+
+---
+
+# Git 외부 접근 도구들
+
+- Git을 외부에서 접근하는 도구가 필요
+- 더 세밀하게 조작하고자 하거나, 외부 서버에 붙어서 작업하고 싶다면 CLI
+- 일반적인 작업 + 개념이해에는 GUI로도 충분
+- CLI, GUI 둘다 있는 vscode를 통해 실습 진행 예정
 
 <div style="display: flex; align-items: center; gap: 20px">
     <div>
@@ -127,29 +154,10 @@ image: 'https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI'
 
 ---
 
-# CLI vs GUI
+# GitHub는 그러면 뭐에요?
 
-- 더 세밀하게 조작하고자 한다면 CLI
-- 외부 서버에 붙어서 작업하고 싶다면 CLI
-- 일반적인 작업 + 개념이해에는 GUI로도 충분!
-
-<div style="display: flex; align-items: center; gap: 20px; margin-top: 40px">
-    <div style="border-radius: 20px; overflow: hidden">
-        <img src="/images/github-desktop.png" width="100" alt=""/>
-    </div>
-    <div style="border-radius: 20px; overflow: hidden">
-        <img src="/images/sourcetree.png" width="100" alt=""/>
-    </div>
-    <div style="border-radius: 20px; overflow: hidden">
-        <img src="/images/fork.png" width="100" alt=""/>
-    </div>
-</div>
-
----
-
-# Remote 저장소
-
-- 그래서 내 소스를 어디에 올릴까?
+- 버전 관리되고 있는 프로그램을 업로드하는 저장소
+- 제일 대중적인 저장소가 GitHub
 
 <div style="display: flex; align-items: center; gap: 20px; margin: 30px 0">
     <div style="border-radius: 20px; overflow: hidden">
@@ -164,15 +172,43 @@ image: 'https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI'
 </div>
 
 - 일반적인 상황은 아니지만 원격 저장소를 여러 개 둘 수도 있다.
-- 가장 근본이 되는 저장소 == origin
+- `가장 근본이 되는 저장소 == origin`
+
+---
+
+# 딴소리) MS가 주도하는(?) 개발 생태계
+
+- 합이 잘 맞아서 같이 쓰면 좋다.
+
+<div style="display: flex; align-items: center; gap: 20px; margin: 30px 0">
+    <div style="border-radius: 20px; overflow: hidden">
+        <img src="/images/ms-ecosystem.png" width="400" alt=""/>
+    </div>
+</div>
 
 ---
 
 # 3. 개념1) Local and Remote
 
-<div style="margin-top: 40px">
+---
+
+# Local and Remote
+
+- Remote: 다른 사람들과 공유되는 공간. 지금까지의 작업사항이 병합되어 있음.
+- Local: 나만의 공간. 실험적인 시도들을 할 수 있다.
+
+<div style="margin-top: 20px">
     <img src="/images/local-and-remote.png" width="300" alt=""/>
 </div>
+
+---
+
+# Local에서의 Flow
+
+1. 파일들을 생성한다.
+2. 업로드하고 싶은 것들만 상자에 담는다. (`add`)
+3. 상자에 송장을 붙인다. (`commit`)
+4. 서버로 보낸다. (`push`)
 
 ---
 
@@ -180,20 +216,13 @@ image: 'https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI'
 
 <div>
     <ul>
-        <li>History: 변동 기록</li>
+        <li>History: 포장을 마친 상자들</li>
         <li>Staged: 상자 안의 영역</li>
         <li>Unstaged: 상자 밖의 영역</li>
         <li>Untracked: 아예 관심을 갖지 않는 영역</li>
     </ul>
-    <p style="margin-top: 20px; text-decoration: line-through">굳이 이렇게까지 복잡하게 해야하는가?</p>
-</div>
-
----
-
-# Layers in Local
-
-<div>
-    <img src="/images/local-layers.png" alt="" width="500">
+    <hr style="margin: 20px 0"/>
+    <p>Q. 굳이 이렇게까지 복잡하게 해야하는가?</p>
 </div>
 
 ---
@@ -219,6 +248,14 @@ image: 'https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI'
    - `Accept Both Changes`: 둘다 선택
 2. add & commit
 ```
+
+---
+
+# Remote의 변경사항 내려받기
+
+- token 입력이 필요한 경우(Windows, git 처음 설치, ...)
+  1. Settings > Developer Settings > Personal access tokens에서 토큰을 발급받기
+  2. `git config --global credential.helper store`: 최초 한번만 token 입력가능하게
 
 ---
 
@@ -254,6 +291,10 @@ CLI Tips
 ---
 
 # 4. 개념2) 작업공간 분리와 협업하기
+
+---
+
+# 문제
 
 - 만약 두 사람이 하나의 remote를 바라보고 있다면?
 
@@ -362,7 +403,21 @@ CLI Tips
 
 ---
 
-# 딴소리) git의 원리
+# 5. 오픈소스에 기여하기
+
+---
+
+- 오픈소스는 많은 사람들이 함께 사용하는 소스이기 때문에, 브랜치를 파기보다는 fork를 통해 작업공간을 분리하기를 일반적으로 권장
+- fork -> Pull Request를 통해 오픈소스에 기여해보자
+- https://github.com/jinoov-sandbox/some-opensource
+
+---
+
+# 6. git의 내부원리
+
+---
+
+# git의 내부원리
 
 - 저장소의 수많은 정보들(remote, local, branch, history...)는 대체 어디에 저장되어있는걸까?
 - 저장소 내 `.git`에 비밀이 있다
@@ -410,11 +465,23 @@ print('hello world')
 # hash: 8b8d0064cdef7af5e2aadb3cdcd7b7606bb3fd68
 ```
 
+<div style="margin-top: 20px;">
+    <ul>
+        <li><code>git log</code>: 로그보기</li>
+        <li><code>git show &lt;HASH&gt;</code>: 변경사항 보기</li>
+        <li><code>git cat-file -p &lt;HASH&gt;</code>: 메타데이터 보기(부모, 저자 등등)</li>
+    </ul>
+</div>
+
 ---
 
-# 개념3) 기록 조작하기
+# 7. 개념3) 기록 조작하기
 
-- 작업을 하다보니 일정 시점으로 다시 작업물을 되돌리고 싶어졌다. 일일이 ctrl + z해야할까?
+---
+
+# 기록 조작하기
+
+- 작업을 하다보니 일정 시점으로 다시 작업물을 되돌리고 싶어졌다. 일일이 `Ctrl + z`해야할까?
 
 ---
 
@@ -434,6 +501,10 @@ print('hello world')
 - `git revert <hash>`: 맘에 안드는 commit을 되돌리고 싶을 때. 되돌린다는 commit 자체가 남는다
 - `git reset --hard <hash>`: 기록을 아예 날려버리고 싶을 때. 혹시 모르니 백업은 해놓자^^;
 - `git reset --soft <hash>`: 기록을 조작할 생각은 없고 HEAD를 왔다갔다만 하고 싶을 때
+
+---
+
+# 8. 외부도구와 연동하기
 
 ---
 
