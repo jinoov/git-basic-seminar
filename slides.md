@@ -188,6 +188,21 @@ fonts:
 
 ---
 
+# 실습 환경만들기
+
+1. 로컬환경에서 빈 프로젝트(폴더) 만들기
+2. `git init` 명령어로 '나는 깃을 사용할거야' 선언하기
+3. GitHub 로그인하고 Repository(업로드 하는 공간) 생성하기
+4. `git remote add origin <저장소 주소>` -> 연결해주기
+
+<div style="display: flex; align-items: center; gap: 20px; margin: 30px 0">
+    <div style="border-radius: 20px; overflow: hidden">
+        <img src="/images/git-repository-start.png" width="500" alt=""/>
+    </div>
+</div>
+
+---
+
 # 3. 개념1) Local and Remote
 
 ---
