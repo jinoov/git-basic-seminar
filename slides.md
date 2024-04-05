@@ -24,20 +24,25 @@ image: 'https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI'
 # 발표자 소개
 
 - 산업공학과 19학번 최진호
-- 인지과학 복수전공
-- 스타트업에서 2년동안 웹개발자로 근무
-- 생산성(~~날먹~~), UX 엔지니어링에 관심이 많음
+- 웹 개발을 좋아합니다
+- 생산성(~~날먹~~)을 높이는 방법에 관심이 많습니다
 
 ---
 
 # Table Of Contents
 
 1. Git이란? 대체 왜 쓰는가?
-2. Git 관련 도구들 소개(CLI & GUI)
+2. 실습환경구축하기
 3. 개념1) Local and Remote
 4. 개념2) 작업공간 분리와 협업하기
 5. 개념3) 기록조작하기
-6. System Integration
+6. Git 내부 원리
+7. GitHub 메뉴 소개
+8. 외부 도구 연동하기
+
+---
+
+# 1. Git이란?
 
 ---
 
@@ -241,7 +246,9 @@ image: 'https://unsplash.com/ko/%EC%82%AC%EC%A7%84/HLQDfaJUTVI'
 - `git add <원하는 파일>`: 변경 사항들을 상자 안에 넣는다(모든 파일을 다 상자에 넣고 싶으면 `git add .`)
 - `git commit -m '<메시지>'`: 상자에 송장을 붙인다(당연히 상자에 든게 없으면 송장도 못붙임!)
 - `git push`: 송장붙인 상자를 서버에 보낸다
-- `git pull`: 서버에서 변경사항을 내려받는다(뒤에서 다른 의미로도 쓰인다)
+- `git pull`: 서버에서 변경사항을 내려받는다(`fetch` + `merge`)
+- `git fetch`: 서버에서 변경사항 받아오기
+- `git merge`: 브랜치 합치기
 - `git clone <원하는 remote 주소>`: 맨 처음 시작할 때
 - `git log`: 히스토리 보기
 - `git diff`: 현재시점의 변경사항 보기
