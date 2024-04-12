@@ -455,7 +455,7 @@ CLI Tips
 # GitHub의 사용 목적
 
 - Local에서 관리되는 Git의 내용을 remote에 백업해두기
-- remote의 세계로 진입한 이후, 보다 많은 기능들에 대한 접근이 가능하다.
+- Remote의 세계로 진입한 이후, 보다 많은 기능들에 대한 접근이 가능하다.
   - fork, pull request, ...
 
 ---
@@ -487,14 +487,14 @@ CLI Tips
 
 1. 프로젝트 생성하기
 2. 깃을 사용한다고 선언하기
-   - `Initialize Git Repository` 버튼
+   - `Initialize Git Repository` 클릭
 3. 상자만들기, 송장붙이기
-   - (+) 버튼 & `Commit`
+   - (+) 버튼 & `Commit` 클릭
 4. 깃허브 저장소 만들기
-   - `Publish Branch`
+   - `Publish Branch` 클릭
    - Public: 링크만 있으면 누구나 접속 가능. / Private: 초대를 받아야만 접속 가능
 5. 만든 상자를 서버에 전송하기
-   - `Sync Changes`
+   - `Sync Changes` 클릭
 
 ---
 
@@ -507,7 +507,7 @@ CLI Tips
    - `git branch -c <브랜치명>`: 브랜치 만들기
    - `git switch <브랜치명>`: 브랜치 전환하기
 4. 브랜치를 새로 만든 경우, PR 올리기
-   - PR은 remote <-> remote 이기에 Git이 아닌 GitHub의 기능이다!
+   - PR은 remote ↔️ remote 이기에 Git이 아닌 GitHub의 기능이다!
 
 ---
 
@@ -632,10 +632,27 @@ print('hello world')
 
 # 명령어 요약
 
-- `git checkout <hash>`: 해당 hash에서의 상태로 이동하기
 - `git revert <hash>`: 맘에 안드는 commit을 되돌리고 싶을 때. 되돌린다는 commit 자체가 남는다
 - `git reset --hard <hash>`: 기록을 아예 날려버리고 싶을 때. 혹시 모르니 백업은 해놓자^^;
 - `git reset --soft <hash>`: 기록을 조작할 생각은 없고 HEAD를 왔다갔다만 하고 싶을 때
+
+---
+
+# rebase
+
+- `rebase`: base를 다시(re) 바꾼다.
+- 노드의 부모를 바꾸는 기법
+- commit history를 일자로 깔끔하게 유지할 수 있다.
+- 이런게 있구나 정도로 이해해도 됩니다.
+
+<div style="display: flex; align-items: center; gap: 30px; margin-top: 40px">
+    <div style="border-radius: 20px; overflow: hidden">
+        <img src="/images/rebase-merge.png" width="400" alt=""/>
+    </div>
+    <div style="border-radius: 20px; overflow: hidden">
+        <img src="/images/recursive-merge.png" width="400" alt=""/>
+    </div>
+</div>
 
 ---
 
@@ -692,6 +709,7 @@ print('hello world')
 # Slack에 깃허브 연동하기
 
 - "Issue 생성할 때마다, PR 날릴 때마다.. 일일이 보고해야하나?? 🤔"
+- [레포지토리](https://github.com/jinoov-sandbox/my-awesome-website)
 - [참고링크](https://sepiros.tistory.com/37)
 
 <div style="display: flex; align-items: center; margin-top: 30px">
@@ -712,10 +730,18 @@ print('hello world')
 
 ---
 
+# 좋은 파이프라인을 만들자
+
+<div style="display: flex; align-items: center;">
+    <img src="/images/cycle.png" width="400" alt=""/>
+</div>
+
+---
+
 # 마무리하며
 
 - Git은 직접 많이 써봐야 늡니다. 프로젝트할 때 꼭꼭 써보시고, SW 관련 과제할 때라도 깃을 꼭 써보세요!
 - 명령어는 구글과 GPT가 다 알려주기에, 머릿속에 큰 그림을 그리는게 제일 중요하고, 이를 위해 여러 사람의 관점을 배우는게 좋습니다.
   - [코딩애플 git 무료강의](https://codingapple.com/course/git-and-github/)
   - [드림코딩 git 무료강의](https://www.youtube.com/watch?v=Z9dvM7qgN9s)
-- 들어주셔서 감사합니다 :)
+- 피드백과 질문은 언제나 환영이에요. 들어주셔서 감사합니다 :)
