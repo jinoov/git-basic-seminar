@@ -437,6 +437,116 @@ CLI Tips
 
 ---
 
+# 1주차 Remind 🚀
+
+---
+
+# Git의 사용 목적
+
+- 버전 관리(언제, 누가, 어떻게, 왜 수정했는가에 대한 파악)
+- 자동 병합
+
+<div style="padding: 10px; margin-top: 20px;">
+    <img src="/images/real-last.jpeg" width="300" alt="">
+</div>
+
+---
+
+# GitHub의 사용 목적
+
+- Local에서 관리되는 Git의 내용을 remote에 백업해두기
+- remote의 세계로 진입한 이후, 보다 많은 기능들에 대한 접근이 가능하다.
+  - fork, pull request, ...
+
+---
+
+# Git & GitHub Architecture
+
+<div style="padding: 10px; margin-top: 20px;">
+    <img src="/images/github-architecture.png" width="1000" alt="">
+</div>
+
+---
+
+# Repository 새로 생성하기(only in CLI)
+
+1. 프로젝트 생성하기
+2. 깃을 사용한다고 선언하기
+   - `git init`
+3. 깃허브 저장소 만들기
+   - `git remote add origin <주소>`
+4. 상자만들기, 송장붙이기
+   - `git add .`
+   - `git commit -m '<메시지>'`
+5. 만든 상자를 서버에 보내기
+   - `git push`
+
+---
+
+# Repository 새로 생성하기(only in VSCode)
+
+1. 프로젝트 생성하기
+2. 깃을 사용한다고 선언하기
+   - `Initialize Git Repository` 버튼
+3. 상자만들기, 송장붙이기
+   - (+) 버튼 & `Commit`
+4. 깃허브 저장소 만들기
+   - `Publish Branch`
+   - Public: 링크만 있으면 누구나 접속 가능. / Private: 초대를 받아야만 접속 가능
+5. 만든 상자를 서버에 전송하기
+   - `Sync Changes`
+
+---
+
+# 이미 존재하는 Repository에 붙어서 작업하기
+
+1. 프로젝트 clone받기
+   - 접근 권한이 있다는 전제하에!
+2. 상자만들고 송장붙이고 푸쉬하고 반복
+3. 브랜치를 새로 만들 수도 있다
+   - `git branch -c <브랜치명>`: 브랜치 만들기
+   - `git switch <브랜치명>`: 브랜치 전환하기
+4. 브랜치를 새로 만든 경우, PR 올리기
+   - PR은 remote <-> remote 이기에 Git이 아닌 GitHub의 기능이다!
+
+---
+
+# 이미 존재하는 Repository와 독립적으로 작업하기
+
+1. 프로젝트 fork뜨기
+2. fork뜬 프로젝트를 clone받기
+3. 이하 앞 장표와 동일
+
+---
+
+# Caveats(1)
+
+기억할 것: **Git은 애매한 상황에서 사용자에게 권한을 위임한다.**
+
+1. 아직 송장이 붙지 않은 상자가 브랜치 바꾸기가 불가능하다
+   - 모든 내용을 commit한 상태여야 브랜치를 바꿀 수 있다
+   - ???: 아니 임시로 어디에 보관해두면 안되나?
+   - `git stash`: 임시로 보관하기
+   - `git stash list`: 임시로 보관한 리스트 조회
+   - `git stash pop`: 임시로 보관한 것 꺼내오기
+
+---
+
+# Caveats(2)
+
+2. 아직 송장이 붙지 않은 물건들이 있다면 pull이 불가능하다
+   - 덮어씌워야할지, 그대로 보존해야할지를 모르니까..!
+   - 커밋을 전부 마치고 pull을 하자
+
+---
+
+# Caveats(3)
+
+3. 일반적으로 pull을 받아와야 push가 가능하다.
+   - 만약 내 내용이 옳다고 생각된다면, `git push --force`로 강제로 밀어버려도 된다
+
+---
+
 # 6. git의 내부원리
 
 ---
@@ -522,13 +632,44 @@ print('hello world')
 
 # 명령어 요약
 
+- `git checkout <hash>`: 해당 hash에서의 상태로 이동하기
 - `git revert <hash>`: 맘에 안드는 commit을 되돌리고 싶을 때. 되돌린다는 commit 자체가 남는다
 - `git reset --hard <hash>`: 기록을 아예 날려버리고 싶을 때. 혹시 모르니 백업은 해놓자^^;
 - `git reset --soft <hash>`: 기록을 조작할 생각은 없고 HEAD를 왔다갔다만 하고 싶을 때
 
 ---
 
-# 8. 외부도구와 연동하기
+# 8. GitHub 메뉴 소개
+
+---
+
+# 나도 예쁜 깃허브 프로필을 갖고싶다!
+
+<div style="display: flex; align-items: center; margin-top: 30px; gap: 10px">
+    <img src="/images/pretty-github-readme.png" width="400" alt=""/>
+</div>
+
+---
+
+# 꾸미는 법
+
+- 본인 이름으로 된 Repository만들기
+- 마크다운으로 글 작성하기
+- 예쁘게 꾸며보자(https://github.com/jinoov-sandbox/awesome-readme.git)
+
+---
+
+# Organization을 만들어보자
+
+- 조별과제를 한다치면, 우리조만의 공간이 있으면 좋지 않을까?
+
+<div style="display: flex; align-items: center; margin-top: 30px; gap: 10px">
+    <img src="/images/tensorflow.png" width="400" alt=""/>
+</div>
+
+---
+
+# 9. 외부도구와 연동하기
 
 ---
 
@@ -577,3 +718,4 @@ print('hello world')
 - 명령어는 구글과 GPT가 다 알려주기에, 머릿속에 큰 그림을 그리는게 제일 중요하고, 이를 위해 여러 사람의 관점을 배우는게 좋습니다.
   - [코딩애플 git 무료강의](https://codingapple.com/course/git-and-github/)
   - [드림코딩 git 무료강의](https://www.youtube.com/watch?v=Z9dvM7qgN9s)
+- 들어주셔서 감사합니다 :)
